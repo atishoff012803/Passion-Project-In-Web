@@ -1,0 +1,15 @@
+{
+"name" : "USER1",
+"age" : 28,
+"position": "java developer",
+"student" : false,
+"passport" : null,
+"p_lang": ["java", "python", "c", "c++", "web dev"],
+"address" : {
+        "city" : "BAM",
+        "Dist" : "Gaj", 
+        "Coun": "Inida",
+        "pin": 76010,
+        "phone": 1234567890
+    }
+}

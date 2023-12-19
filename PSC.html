@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GET COMPUTED CSS -->
+    <style>
+        #btncc
+        {
+            background-color: yellow;
+            color:darkgreen;
+        }
+        .bg
+        {
+            background-color: yellow;
+            color: blue;
+        }
+        .dim
+        {
+            border: 1px solid red;
+            padding: 20px;
+        }
+
+        #mbx{
+            height: 100px;
+            width:100px;
+            background-color: blueviolet;
+        }
+        #mbx1{
+            height: 100px;
+            width:100px;
+            background-color: blue;
+        }
+        #mbx2{
+            height: 100px;
+            width:100px;
+            background-color: yellow;
+        }
+        #mbx3{
+            height: 100px;
+            width:100px;
+            background-color: red;
+        }
+        #mbx4{
+            height: 100px;
+            width:100px;
+            background-color: pink;
+        }
+        #mbx5{
+            height: 100px;
+            width:100px;
+            background-color: green;
+        }
+        #mbx6{
+            height: 100px;
+            width:100px;
+            background-color: maroon;
+        }
+        body{
+            height: 4000px;
+        }
+        body{
+            padding: 100px;
+            background-color:brown;
+        }
+        #EB{
+            padding: 50px;
+            background-color: darkblue;
+        }
+        body{
+            background-color: yellow;
+        }
+       
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- SELECT AN ELEMENT BY ID -->
+    <input type="text" id="one">
+    <ul>
+        <li>list1</li>
+        <li id="slt">list2</li>
+        <li>list3</li>
+    </ul>
+
+    <!-- SELECT AN ELEMENT BY CLASS -->
+    <ul>
+        <li class="slct">list1</li>
+        <li class="slct">list2</li>
+        <li class="slct">list3</li>
+    </ul>
+
+    <!-- SELECT AN ELEMENT BY TAG NAME -->
+    <ul>
+        <li>LIST</li>
+        <li>LIST</li>
+        <li>LIST</li>
+    </ul>
+
+    <h5>heading5</h5>
+    <h5>heading5</h5>
+    <h5>heading5</h5>
+
+    <!-- SELECT AN ELEMENT BY QUERY SELECTOR -->
+    <p class="intro">PARAGRAPH1</p>
+    <p>PARAGRAPH2</p>
+    <p class="intro">PARAGRAPH3</p>
+    <p class="intro">PARAGRAPH4</p>
+
+    <div id="chk">
+        <p>Paragraph1</p>
+        <p>Paragraph2</p>
+    </div>
+
+    <!-- TRAVERSING ELEMENTS IN JS -->
+    <ul>
+        <li id="li1">list1</li>
+        <li>list2</li>
+        <li>list3</li>
+        <li>list4</li>
+    </ul>
+
+    <ul id="ul1">
+        <li>list a</li>
+        <li id="tst1">list b</li>
+        <li>list c</li>
+        <li>list d</li>
+    </ul>
+
+    <!-- CHANGE HTML(INNERHTML) IN JS -->
+    <div id="intro">
+        <p>THIS IS A PARAGRAPH</p>
+    </div>
+
+    <!-- CREATE AND APPEND ELEMENT IN JS -->
+
+    <div id="apnd">
+        <p id="p1">THIS IS A PARAGRAPH</p>
+    </div>
+
+    <ul id="ulsl">
+        <li>Atish</li>
+        <li>Lipun</li>
+        <li>Mritunjay</li>
+        <li>Satish</li>
+    </ul>
+
+    <!-- INSERT BEFORE IN JS -->
+
+    <ul id="IB">
+        <li>ATISH 1</li>
+        <li>ATISH 2</li>
+        <li>ATISH 3</li>
+        <li>ATISH 4</li>
+    </ul>
+
+    <!-- REMOVE CHILD ELEMENT IN JS -->
+
+    <ul id="menu">
+        <li>HOME</li>
+        <li>PRODUCT</li>
+        <li>ABOUT</li>
+    </ul>
+
+    <!-- CLONE ELEMENT -->
+
+    <ul id="cln">
+        <li>LIST 01</li>
+        <li>LIST 02</li>
+        <li>LIST 03</li>
+        <li>LIST 04</li>
+        <li>LIST 05</li>
+    </ul>
+
+    <!-- REPLACE ELEMENT -->
+    <ul id="mnu">
+        <li>MENU1</li>
+        <li>MENU2</li>
+        <li>MENU3</li>
+    </ul>
+
+    <!-- INSERT ADJACENTHTML -->
+
+    <!-- beforebegin -->
+    <div id="ia">
+        <!-- afterbegin -->
+        <h2>HEADING2</h2>
+        <p>THIS IS A P TAG.</p>
+        <!-- beforeend -->
+    </div>
+    <!-- afterend -->
+
+    <!-- CHANGE ATTRIBUTE IN JAVASCRIPT --><!-- INLINE STYLE -->
+
+    <button id="btn">send</button>
+
+    <!-- GET COMPUTED CSS -->
+
+    <button id="btncc">send</button>
+
+    <!-- CHANGE CSS CLASSES --><!-- WIDTH AND HEIGHT OF AN ELEMENT -->
+
+    <div id="box" class="bg">
+        <p>THIS IS A DUMY TEXT.</p>
+    </div>
+
+    <!-- DOCUMENT OBJECT MODEL(DOM) EVENTS -->
+    <button id="btne" onclick="btnclk()">click me!</button>
+
+    <button id="btne1">CLICK HERE</button>
+
+    <!-- REMOVE EVENTLISTENER -->
+
+    <button id="rebtn">REMOVE BUTTON</button>
+
+    <!-- MOUSE EVENTS IN JS -->
+    <div id="mbx" onclick="ME()"></div>
+    <div id="mbx1" oncontextmenu="ME1()"></div>
+    <div id="mbx2" ondblclick="ME2()"></div>
+    <div id="mbx3" onmousedown="ME3()"></div>
+    <div id="mbx4" onmouseup="ME4()"></div>
+    <div id="mbx5" onmouseover="ME5()"></div>
+    <div id="mbx6" onmouseout="ME6()"></div>
+
+    <!-- KEY DOWN EVENT -->
+    <div id="kbx1" style="height: 100px; width: 100px; background-color: red;">Key Down Event</div>
+
+    <!-- EVENTS ON FORM IN JS -->
+
+    <form action="">
+        <input type="text" id="I1">
+    </form>
+
+    <!-- Event Bubling & Event Capturing -->
+    <div id="EB">
+        <button id="bt63">
+            click me!
+        </button>
+    </div>
+
+    <!-- Prevent Default -->
+    <a href="http://www.youtube.com" id="YT">YouTube Click!</a>
+
+    <form action="" id="frm64">
+        <input type="text">
+        <input type="submit">
+    </form>
+
+    <!-- Window -->
+    <button id="wbtn">
+        google
+    </button>
+
+    <button id="wbtn1">
+        Yahoo!
+    </button>
+
+    <button id="wbtn2">
+        close!
+    </button>
+
+    <!-- Time Out & Time Interval -->
+    <button id="TOTI">
+        click click!
+    </button>
+
+    <!-- Location Object -->
+    <button id="LO" onclick="lof()">MEWO </button>
+
+   
+
+    <script src="PSC.js"></script>
+</body>
+</html>

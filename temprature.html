@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+         body{
+            padding: 50px, 100px;
+        }
+        #temp{
+            text-align: center;
+        }
+        #container{
+            text-align: center;
+            background-color: rgb(105, 186, 105);
+            padding: 50px;
+        }
+        .input{
+            display: inline-block;
+        }
+        .imp{
+            padding: 10px;
+            margin: 20px;
+            font-size: 25px;
+            font-weight: bold;
+            width: 150px;
+            text-align: center;
+        }
+        label{
+            font-size: 28px;
+            color: rgb(189, 43, 43);
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+     <!-- Temprature converter -->
+     <h3 id="temp">Temprature converter</h3>
+     <div id="container">
+         <div class="input">
+             <label>Celcious</label><br>
+             <input type="number" value="0" id="cel" class="imp">
+         </div>
+ 
+         <div class="input">
+             <label>fahrenheit</label><br>
+             <input type="number" value="32" id="far" class="imp">
+         </div>
+     </div>
+
+     <script>
+         // Temprature converter js
+         let cel = document.getElementById("cel");
+        let fah = document.getElementById("far");
+        cel.addEventListener('input',function(){
+                let cc = this.value;
+                let f = (cc * 9 / 5) + 32;
+                if(!Number.isInteger(f)){
+                    f = f.toFixed(4);
+                }
+                fah.value = f;
+        });
+        fah.addEventListener('input', function(){
+            let ff = this.value;
+            let c = (ff - 32) * 5 / 9;
+            if(!Number.isInteger(c)){
+                c = c.toFixed(4);
+            }
+            cel.value = c;
+        });
+     </script>
+</body>
+</html>

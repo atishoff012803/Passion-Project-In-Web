@@ -1,0 +1,39 @@
+body{
+    background-color: rgba(14, 85, 6, 0.485);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    color: aliceblue;
+}
+.digit{
+    font-size: 100px;
+    font-weight: bold;
+}
+.txt{
+    font-size: 40px;
+    font-weight: bold;
+}
+#btnn{
+    text-align: center;
+    margin-top: 40px;
+}
+.btn{
+    padding: 7px 25px;
+    font-size: 15px;
+    margin: 0px 10px;
+    color: white;
+    border: 0px;
+    cursor: pointer;
+}
+#start{
+    background-color: purple;
+}
+#stop{
+    background-color: orange;
+}
+#reset{
+    background-color: blue;
+}

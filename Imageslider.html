@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="imageSlider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <!-- font awsome CDN Link -->
+    <title>Document</title>
+</head>
+<body>
+    <!-- Aspect Ratio of Image must be 3 : 1 == 1920 x 640 -->
+    <div class="slidecontain">
+        <div class="slide">
+            <img src="LANTERN.jpg" alt=""> 
+            <div class="caption">Caption Text1</div>
+        </div>
+        
+        <div class="slide">
+            <img src="LAPTOP.jpg" alt="">
+            <div class="caption">Caption Text2</div>
+        </div>
+        
+        <div class="slide">
+            <img src="nature.jpg" alt="">
+            <div class="caption">Caption Text3</div>
+        </div>
+        
+        <div class="slide">
+            <img src="DOM TREE.jpg" alt="">
+            <div class="caption">Caption Text4</div>
+        </div>
+        <span class="arrow stl1" onclick="control(-1)">&#10094;</span>
+        <span class="arrow stl2" onclick="control(1)">&#10095;</span>
+        </div>
+        <script src="ImageSlider.js"></script>
+</body>
+</html>

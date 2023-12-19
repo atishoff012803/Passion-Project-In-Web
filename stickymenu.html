@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 0px;
+        }
+        #header{
+            text-align: center;
+        }
+        #logo{
+            width: 100px;
+            height: auto;
+        }
+        #menu{
+            text-align: center;
+            background-color: lightgreen;
+        }
+        #menu li{
+            display: inline-block;
+            padding: 15px 10px;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #container{
+            text-align: center;
+            padding: 50px 100px;
+        }
+        #img{
+            width: 100%;
+        }
+        p{
+            text-align: justify;
+            font-size: 20px;
+        }
+        .sticky{
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <img src="https://seeklogo.com/images/N/nature-logo-622B2953DA-seeklogo.com.png" alt="" id="logo">
+    </div>
+    <nav id="menu">
+        <li>Menu</li>
+        <li>ABOUT</li>
+        <li>Contact</li>
+        <li>Mail</li>
+        <li>Add</li>
+    </nav>
+    <div id="container">
+        <h1>About Us Sticky Menu</h1>
+        <img id="img" src="lock_wp.jpg">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur alias delectus, eveniet ut, suscipit dignissimos magnam sapiente ullam voluptas consequatur at. Incidunt at nihil ab fuga consequatur distinctio libero, iste saepe laborum reprehenderit quam iure voluptate, vel est eum accusantium? Eum, culpa. Vel magni laudantium eos natus exercitationem totam veniam quo vero deserunt? Optio fuga vitae dolore animi, possimus iste dolor fugiat unde. Ipsum, consectetur consequuntur tenetur velit autem optio quas, dolores magnam magni, rerum minima quos doloremque. Debitis, voluptas! Et fugiat aliquam dignissimos officiis suscipit, praesentium libero eos assumenda pariatur quibusdam explicabo repellendus voluptatum culpa, impedit dolor laborum iure magnam consequuntur quod placeat. Facere, reprehenderit? Mollitia reiciendis at ratione cupiditate numquam rerum animi maiores illum sint adipisci possimus fugiat repellat nihil voluptatibus, quo facere nostrum neque distinctio libero maxime vitae, eveniet id. Incidunt explicabo necessitatibus et dolorem porro dignissimos? Expedita ipsa quas qui molestias maxime, soluta quod sunt ducimus. Architecto quisquam molestiae debitis iusto ratione, perspiciatis voluptates beatae, unde quibusdam totam magni atque velit veniam incidunt id iure enim eos accusamus molestias, magnam nobis quo soluta. Esse, ratione assumenda consequatur earum velit magnam! Beatae reprehenderit hic earum voluptatibus reiciendis. Sunt, eveniet fugit. Cum expedita impedit excepturi aut vel voluptate voluptates hic. Dolore minima necessitatibus vitae quae eligendi eaque repellendus illo minus natus nesciunt quam iure facilis praesentium quo iste eveniet animi architecto, perspiciatis temporibus enim voluptatibus delectus deserunt. Similique, veniam harum vel labore quis est. Maxime vel cupiditate, earum ducimus enim, molestias sed voluptatibus quibusdam molestiae ex asperiores quisquam neque quos doloremque architecto, quaerat atque voluptatum debitis dolores quidem fuga aperiam libero? Veniam ratione fugit voluptates cupiditate vitae molestias eum quam, libero eligendi neque nihil illum quidem voluptas sapiente doloribus nobis deserunt autem magni recusandae facilis iusto quasi aspernatur nisi illo. Molestiae doloribus officiis aut iste pariatur nam maxime. Voluptate maiores illum perferendis eveniet ex molestiae nisi omnis, officiis ipsam quos modi consectetur perspiciatis at esse dolorem quam veritatis enim deleniti odio labore suscipit. Tenetur, reprehenderit omnis tempore ad quam labore necessitatibus aut doloremque voluptates? Quo facilis voluptates officiis maxime nobis non nisi laborum voluptate inventore fugit, in quisquam? Sequi explicabo, beatae expedita modi animi magnam distinctio hic, vel debitis repudiandae dolor perspiciatis dolorem recusandae mollitia aperiam fuga, at repellat unde rem corporis eius aspernatur sunt quia. Inventore consequuntur autem rem consequatur nihil esse temporibus nesciunt voluptatum impedit asperiores ut, voluptatibus ipsam facilis tempore itaque recusandae aspernatur ad culpa neque. Repudiandae tempora fuga culpa voluptatum dolore molestiae, repellat nostrum? Maiores quo nam atque officia labore nisi quibusdam esse, harum commodi cupiditate ea ducimus corporis molestias culpa optio, id quaerat facere temporibus doloribus non dolorem ratione velit itaque. Nobis odit dolores optio eveniet facilis maxime veniam facere nostrum illum. Numquam deserunt iusto, dolorem totam sunt molestias quisquam animi fugiat laborum ipsam facilis cupiditate itaque est eos deleniti tempora fugit adipisci minus voluptatibus placeat ut iste ea. Earum illum corporis sequi. Eum sed nihil ducimus ex? Perferendis asperiores voluptates cum minima placeat laudantium aliquam ipsa consequatur totam ex, saepe, porro commodi.
+        </p>
+    </div>
+
+    <script>
+        window.addEventListener('scroll', function(){
+            let nav = document.getElementById("menu");
+            if(window.pageYOffset >= 90){
+                nav.classList.add('sticky');
+            }
+            else{
+                nav.classList.remove('sticky');
+            }
+        });
+    </script>
+</body>
+</html>
